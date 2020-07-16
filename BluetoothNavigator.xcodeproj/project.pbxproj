@@ -9,21 +9,12 @@
 /* Begin PBXBuildFile section */
 		E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */; };
 		E15C8F0A24C0A40600AA1E18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F0924C0A40600AA1E18 /* SceneDelegate.swift */; };
-		E15C8F0C24C0A40600AA1E18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F0B24C0A40600AA1E18 /* ViewController.swift */; };
-		E15C8F0F24C0A40600AA1E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F0D24C0A40600AA1E18 /* Main.storyboard */; };
-		E15C8F1124C0A40700AA1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F1024C0A40700AA1E18 /* Assets.xcassets */; };
-		E15C8F1424C0A40700AA1E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F1224C0A40700AA1E18 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E15C8F0424C0A40600AA1E18 /* BluetoothNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E15C8F0924C0A40600AA1E18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E15C8F0B24C0A40600AA1E18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E15C8F0E24C0A40600AA1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E15C8F1024C0A40700AA1E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E15C8F1324C0A40700AA1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E15C8F1524C0A40700AA1E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +49,6 @@
 			children = (
 				E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */,
 				E15C8F0924C0A40600AA1E18 /* SceneDelegate.swift */,
-				E15C8F0B24C0A40600AA1E18 /* ViewController.swift */,
-				E15C8F0D24C0A40600AA1E18 /* Main.storyboard */,
-				E15C8F1024C0A40700AA1E18 /* Assets.xcassets */,
-				E15C8F1224C0A40700AA1E18 /* LaunchScreen.storyboard */,
-				E15C8F1524C0A40700AA1E18 /* Info.plist */,
 			);
 			path = BluetoothNavigator;
 			sourceTree = "<group>";
@@ -125,9 +111,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15C8F1424C0A40700AA1E18 /* LaunchScreen.storyboard in Resources */,
-				E15C8F1124C0A40700AA1E18 /* Assets.xcassets in Resources */,
-				E15C8F0F24C0A40600AA1E18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +121,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15C8F0C24C0A40600AA1E18 /* ViewController.swift in Sources */,
 				E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */,
 				E15C8F0A24C0A40600AA1E18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E15C8F0D24C0A40600AA1E18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E15C8F0E24C0A40600AA1E18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E15C8F1224C0A40700AA1E18 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E15C8F1324C0A40700AA1E18 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E15C8F1624C0A40700AA1E18 /* Debug */ = {
