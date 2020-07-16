@@ -8,13 +8,105 @@
 
 /* Begin PBXBuildFile section */
 		E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */; };
-		E15C8F0A24C0A40600AA1E18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F0924C0A40600AA1E18 /* SceneDelegate.swift */; };
+		E15C8F3024C0AE4B00AA1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */; };
+		E15C8F3124C0AE4B00AA1E18 /* CreateIdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */; };
+		E15C8F3224C0AE4B00AA1E18 /* IdentifierCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */; };
+		E15C8F3424C0AE4B00AA1E18 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2824C0AE4A00AA1E18 /* Extensions.swift */; };
+		E15C8F3524C0AE4B00AA1E18 /* BluetoothNavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */; };
+		E15C8F3624C0AE4B00AA1E18 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */; };
+		E15C8F3724C0AE4B00AA1E18 /* BluetoothNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */; };
+		E15C8F3824C0AE4B00AA1E18 /* IdentifierCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2C24C0AE4A00AA1E18 /* IdentifierCell.swift */; };
+		E15C8F3924C0AE4B00AA1E18 /* BluetoothNavigatorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */; };
+		E15C8F3A24C0AE4B00AA1E18 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2E24C0AE4B00AA1E18 /* LogoView.swift */; };
+		E15C8F3B24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2F24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift */; };
+		E15C8F4024C0AE8300AA1E18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F3C24C0AE8300AA1E18 /* LaunchScreen.storyboard */; };
+		E15C8F4124C0AE8300AA1E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F3E24C0AE8300AA1E18 /* Main.storyboard */; };
+		E15C8F4524C0AF4500AA1E18 /* MoBetterBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15C8F4324C0AF4500AA1E18 /* MoBetterBluetooth.framework */; };
+		E15C8F4624C0AF4500AA1E18 /* MoBetterBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E15C8F4324C0AF4500AA1E18 /* MoBetterBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E15C8F4724C0AF4500AA1E18 /* VerticonsToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15C8F4424C0AF4500AA1E18 /* VerticonsToolbox.framework */; };
+		E15C8F4824C0AF4500AA1E18 /* VerticonsToolbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E15C8F4424C0AF4500AA1E18 /* VerticonsToolbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E15C8F4D24C0B2AE00AA1E18 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F4C24C0B2AE00AA1E18 /* Settings.bundle */; };
+		E15C8F5224C0B2F500AA1E18 /* BeaconRegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F4E24C0B2F400AA1E18 /* BeaconRegionsTableViewController.swift */; };
+		E15C8F5324C0B2F500AA1E18 /* BeaconRegionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F4F24C0B2F400AA1E18 /* BeaconRegionHeader.swift */; };
+		E15C8F5424C0B2F500AA1E18 /* BeaconNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5024C0B2F400AA1E18 /* BeaconNotifier.swift */; };
+		E15C8F5524C0B2F500AA1E18 /* BeaconRegionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F5124C0B2F500AA1E18 /* BeaconRegionHeader.xib */; };
+		E15C8F5E24C0B30500AA1E18 /* BluetoothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5624C0B30500AA1E18 /* BluetoothCell.swift */; };
+		E15C8F5F24C0B30500AA1E18 /* PeripheralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5724C0B30500AA1E18 /* PeripheralCell.swift */; };
+		E15C8F6024C0B30500AA1E18 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5824C0B30500AA1E18 /* ServiceCell.swift */; };
+		E15C8F6124C0B30500AA1E18 /* CentralCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5924C0B30500AA1E18 /* CentralCell.swift */; };
+		E15C8F6224C0B30500AA1E18 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F5A24C0B30500AA1E18 /* ServiceCell.xib */; };
+		E15C8F6324C0B30500AA1E18 /* DescriptorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5B24C0B30500AA1E18 /* DescriptorCell.swift */; };
+		E15C8F6424C0B30500AA1E18 /* PeripheralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F5C24C0B30500AA1E18 /* PeripheralCell.xib */; };
+		E15C8F6524C0B30500AA1E18 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5D24C0B30500AA1E18 /* CharacteristicCell.swift */; };
+		E15C8F6824C0B31100AA1E18 /* BluetoothExplorerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6624C0B31100AA1E18 /* BluetoothExplorerTableView.swift */; };
+		E15C8F6924C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6724C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift */; };
+		E15C8F7124C0B31E00AA1E18 /* DiscoveredPeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6A24C0B31E00AA1E18 /* DiscoveredPeripheralViewController.swift */; };
+		E15C8F7224C0B31E00AA1E18 /* SubscriptionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */; };
+		E15C8F7324C0B31E00AA1E18 /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6C24C0B31E00AA1E18 /* CentralViewController.swift */; };
+		E15C8F7424C0B31E00AA1E18 /* CharacteristicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6D24C0B31E00AA1E18 /* CharacteristicViewController.swift */; };
+		E15C8F7524C0B31E00AA1E18 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6E24C0B31E00AA1E18 /* Factory.swift */; };
+		E15C8F7624C0B31E00AA1E18 /* RssiGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6F24C0B31E00AA1E18 /* RssiGraph.swift */; };
+		E15C8F7724C0B31E00AA1E18 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F7024C0B31E00AA1E18 /* SubscriptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E15C8F4924C0AF4500AA1E18 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E15C8F4824C0AF4500AA1E18 /* VerticonsToolbox.framework in Embed Frameworks */,
+				E15C8F4624C0AF4500AA1E18 /* MoBetterBluetooth.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		E15C8F0424C0A40600AA1E18 /* BluetoothNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C8F0424C0A40600AA1E18 /* Bluetooth Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth Navigator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E15C8F0924C0A40600AA1E18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E15C8F2024C0AD5A00AA1E18 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
+		E15C8F2124C0AD5A00AA1E18 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIdentifierViewController.swift; sourceTree = "<group>"; };
+		E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentifierCell.xib; sourceTree = "<group>"; };
+		E15C8F2724C0AE4A00AA1E18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E15C8F2824C0AE4A00AA1E18 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorViewController.swift; sourceTree = "<group>"; };
+		E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorView.swift; sourceTree = "<group>"; };
+		E15C8F2C24C0AE4A00AA1E18 /* IdentifierCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdentifierCell.swift; sourceTree = "<group>"; };
+		E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorTheme.swift; sourceTree = "<group>"; };
+		E15C8F2E24C0AE4B00AA1E18 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		E15C8F2F24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorButton.swift; sourceTree = "<group>"; };
+		E15C8F3D24C0AE8300AA1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E15C8F3F24C0AE8300AA1E18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E15C8F4324C0AF4500AA1E18 /* MoBetterBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoBetterBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C8F4424C0AF4500AA1E18 /* VerticonsToolbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VerticonsToolbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15C8F4C24C0B2AE00AA1E18 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		E15C8F4E24C0B2F400AA1E18 /* BeaconRegionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconRegionsTableViewController.swift; sourceTree = "<group>"; };
+		E15C8F4F24C0B2F400AA1E18 /* BeaconRegionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconRegionHeader.swift; sourceTree = "<group>"; };
+		E15C8F5024C0B2F400AA1E18 /* BeaconNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconNotifier.swift; sourceTree = "<group>"; };
+		E15C8F5124C0B2F500AA1E18 /* BeaconRegionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BeaconRegionHeader.xib; sourceTree = "<group>"; };
+		E15C8F5624C0B30500AA1E18 /* BluetoothCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothCell.swift; sourceTree = "<group>"; };
+		E15C8F5724C0B30500AA1E18 /* PeripheralCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralCell.swift; sourceTree = "<group>"; };
+		E15C8F5824C0B30500AA1E18 /* ServiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		E15C8F5924C0B30500AA1E18 /* CentralCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralCell.swift; sourceTree = "<group>"; };
+		E15C8F5A24C0B30500AA1E18 /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
+		E15C8F5B24C0B30500AA1E18 /* DescriptorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptorCell.swift; sourceTree = "<group>"; };
+		E15C8F5C24C0B30500AA1E18 /* PeripheralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeripheralCell.xib; sourceTree = "<group>"; };
+		E15C8F5D24C0B30500AA1E18 /* CharacteristicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
+		E15C8F6624C0B31100AA1E18 /* BluetoothExplorerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothExplorerTableView.swift; sourceTree = "<group>"; };
+		E15C8F6724C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothExplorerTableHeader.swift; sourceTree = "<group>"; };
+		E15C8F6A24C0B31E00AA1E18 /* DiscoveredPeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveredPeripheralViewController.swift; sourceTree = "<group>"; };
+		E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionEditorViewController.swift; sourceTree = "<group>"; };
+		E15C8F6C24C0B31E00AA1E18 /* CentralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
+		E15C8F6D24C0B31E00AA1E18 /* CharacteristicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicViewController.swift; sourceTree = "<group>"; };
+		E15C8F6E24C0B31E00AA1E18 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		E15C8F6F24C0B31E00AA1E18 /* RssiGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssiGraph.swift; sourceTree = "<group>"; };
+		E15C8F7024C0B31E00AA1E18 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15C8F4724C0AF4500AA1E18 /* VerticonsToolbox.framework in Frameworks */,
+				E15C8F4524C0AF4500AA1E18 /* MoBetterBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,15 +125,19 @@
 		E15C8EFB24C0A40600AA1E18 = {
 			isa = PBXGroup;
 			children = (
+				E15C8F4C24C0B2AE00AA1E18 /* Settings.bundle */,
+				E15C8F2124C0AD5A00AA1E18 /* README.md */,
+				E15C8F2024C0AD5A00AA1E18 /* ToDo.txt */,
 				E15C8F0624C0A40600AA1E18 /* BluetoothNavigator */,
 				E15C8F0524C0A40600AA1E18 /* Products */,
+				E15C8F4224C0AF4500AA1E18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		E15C8F0524C0A40600AA1E18 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E15C8F0424C0A40600AA1E18 /* BluetoothNavigator.app */,
+				E15C8F0424C0A40600AA1E18 /* Bluetooth Navigator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +146,92 @@
 			isa = PBXGroup;
 			children = (
 				E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */,
-				E15C8F0924C0A40600AA1E18 /* SceneDelegate.swift */,
+				E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */,
+				E15C8F2F24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift */,
+				E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */,
+				E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */,
+				E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */,
+				E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */,
+				E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */,
+				E15C8F2824C0AE4A00AA1E18 /* Extensions.swift */,
+				E15C8F2C24C0AE4A00AA1E18 /* IdentifierCell.swift */,
+				E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */,
+				E15C8F2724C0AE4A00AA1E18 /* Info.plist */,
+				E15C8F3C24C0AE8300AA1E18 /* LaunchScreen.storyboard */,
+				E15C8F2E24C0AE4B00AA1E18 /* LogoView.swift */,
+				E15C8F3E24C0AE8300AA1E18 /* Main.storyboard */,
+				E15C8F1D24C0A9C000AA1E18 /* Peripherals */,
+				E15C8F1C24C0A9AF00AA1E18 /* Centrals */,
+				E15C8F1B24C0A98500AA1E18 /* Beacons */,
 			);
 			path = BluetoothNavigator;
+			sourceTree = "<group>";
+		};
+		E15C8F1B24C0A98500AA1E18 /* Beacons */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F5024C0B2F400AA1E18 /* BeaconNotifier.swift */,
+				E15C8F4F24C0B2F400AA1E18 /* BeaconRegionHeader.swift */,
+				E15C8F5124C0B2F500AA1E18 /* BeaconRegionHeader.xib */,
+				E15C8F4E24C0B2F400AA1E18 /* BeaconRegionsTableViewController.swift */,
+			);
+			path = Beacons;
+			sourceTree = "<group>";
+		};
+		E15C8F1C24C0A9AF00AA1E18 /* Centrals */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F6C24C0B31E00AA1E18 /* CentralViewController.swift */,
+				E15C8F6D24C0B31E00AA1E18 /* CharacteristicViewController.swift */,
+				E15C8F6A24C0B31E00AA1E18 /* DiscoveredPeripheralViewController.swift */,
+				E15C8F6E24C0B31E00AA1E18 /* Factory.swift */,
+				E15C8F6F24C0B31E00AA1E18 /* RssiGraph.swift */,
+				E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */,
+				E15C8F7024C0B31E00AA1E18 /* SubscriptionsViewController.swift */,
+				E15C8F1E24C0AA9100AA1E18 /* Tables */,
+			);
+			path = Centrals;
+			sourceTree = "<group>";
+		};
+		E15C8F1D24C0A9C000AA1E18 /* Peripherals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Peripherals;
+			sourceTree = "<group>";
+		};
+		E15C8F1E24C0AA9100AA1E18 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F6724C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift */,
+				E15C8F6624C0B31100AA1E18 /* BluetoothExplorerTableView.swift */,
+				E15C8F1F24C0AAA200AA1E18 /* Cells */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		E15C8F1F24C0AAA200AA1E18 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F5624C0B30500AA1E18 /* BluetoothCell.swift */,
+				E15C8F5924C0B30500AA1E18 /* CentralCell.swift */,
+				E15C8F5D24C0B30500AA1E18 /* CharacteristicCell.swift */,
+				E15C8F5B24C0B30500AA1E18 /* DescriptorCell.swift */,
+				E15C8F5724C0B30500AA1E18 /* PeripheralCell.swift */,
+				E15C8F5C24C0B30500AA1E18 /* PeripheralCell.xib */,
+				E15C8F5824C0B30500AA1E18 /* ServiceCell.swift */,
+				E15C8F5A24C0B30500AA1E18 /* ServiceCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E15C8F4224C0AF4500AA1E18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F4324C0AF4500AA1E18 /* MoBetterBluetooth.framework */,
+				E15C8F4424C0AF4500AA1E18 /* VerticonsToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +244,7 @@
 				E15C8F0024C0A40600AA1E18 /* Sources */,
 				E15C8F0124C0A40600AA1E18 /* Frameworks */,
 				E15C8F0224C0A40600AA1E18 /* Resources */,
+				E15C8F4924C0AF4500AA1E18 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -70,7 +252,7 @@
 			);
 			name = BluetoothNavigator;
 			productName = BluetoothNavigator;
-			productReference = E15C8F0424C0A40600AA1E18 /* BluetoothNavigator.app */;
+			productReference = E15C8F0424C0A40600AA1E18 /* Bluetooth Navigator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,6 +293,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15C8F4124C0AE8300AA1E18 /* Main.storyboard in Resources */,
+				E15C8F3024C0AE4B00AA1E18 /* Assets.xcassets in Resources */,
+				E15C8F5524C0B2F500AA1E18 /* BeaconRegionHeader.xib in Resources */,
+				E15C8F6224C0B30500AA1E18 /* ServiceCell.xib in Resources */,
+				E15C8F4D24C0B2AE00AA1E18 /* Settings.bundle in Resources */,
+				E15C8F3224C0AE4B00AA1E18 /* IdentifierCell.xib in Resources */,
+				E15C8F4024C0AE8300AA1E18 /* LaunchScreen.storyboard in Resources */,
+				E15C8F6424C0B30500AA1E18 /* PeripheralCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,12 +311,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15C8F6824C0B31100AA1E18 /* BluetoothExplorerTableView.swift in Sources */,
+				E15C8F7324C0B31E00AA1E18 /* CentralViewController.swift in Sources */,
+				E15C8F6524C0B30500AA1E18 /* CharacteristicCell.swift in Sources */,
 				E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */,
-				E15C8F0A24C0A40600AA1E18 /* SceneDelegate.swift in Sources */,
+				E15C8F6124C0B30500AA1E18 /* CentralCell.swift in Sources */,
+				E15C8F7524C0B31E00AA1E18 /* Factory.swift in Sources */,
+				E15C8F3624C0AE4B00AA1E18 /* Colors.swift in Sources */,
+				E15C8F5324C0B2F500AA1E18 /* BeaconRegionHeader.swift in Sources */,
+				E15C8F7424C0B31E00AA1E18 /* CharacteristicViewController.swift in Sources */,
+				E15C8F6324C0B30500AA1E18 /* DescriptorCell.swift in Sources */,
+				E15C8F6924C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift in Sources */,
+				E15C8F5424C0B2F500AA1E18 /* BeaconNotifier.swift in Sources */,
+				E15C8F5E24C0B30500AA1E18 /* BluetoothCell.swift in Sources */,
+				E15C8F7624C0B31E00AA1E18 /* RssiGraph.swift in Sources */,
+				E15C8F3824C0AE4B00AA1E18 /* IdentifierCell.swift in Sources */,
+				E15C8F3124C0AE4B00AA1E18 /* CreateIdentifierViewController.swift in Sources */,
+				E15C8F7224C0B31E00AA1E18 /* SubscriptionEditorViewController.swift in Sources */,
+				E15C8F3B24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift in Sources */,
+				E15C8F3724C0AE4B00AA1E18 /* BluetoothNavigatorView.swift in Sources */,
+				E15C8F3A24C0AE4B00AA1E18 /* LogoView.swift in Sources */,
+				E15C8F5224C0B2F500AA1E18 /* BeaconRegionsTableViewController.swift in Sources */,
+				E15C8F5F24C0B30500AA1E18 /* PeripheralCell.swift in Sources */,
+				E15C8F7124C0B31E00AA1E18 /* DiscoveredPeripheralViewController.swift in Sources */,
+				E15C8F3524C0AE4B00AA1E18 /* BluetoothNavigatorViewController.swift in Sources */,
+				E15C8F7724C0B31E00AA1E18 /* SubscriptionsViewController.swift in Sources */,
+				E15C8F3924C0AE4B00AA1E18 /* BluetoothNavigatorTheme.swift in Sources */,
+				E15C8F3424C0AE4B00AA1E18 /* Extensions.swift in Sources */,
+				E15C8F6024C0B30500AA1E18 /* ServiceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E15C8F3C24C0AE8300AA1E18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E15C8F3D24C0AE8300AA1E18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E15C8F3E24C0AE8300AA1E18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E15C8F3F24C0AE8300AA1E18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E15C8F1624C0A40700AA1E18 /* Debug */ = {
@@ -255,7 +490,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rvaessen.BluetoothNavigator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bluetooth Navigator";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,7 +508,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rvaessen.BluetoothNavigator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bluetooth Navigator";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

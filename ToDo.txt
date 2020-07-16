@@ -1,0 +1,6 @@
+Create a text file viewer.
+
+Create a slide in, side bar menu to access the log file, help file, etc.
+
+Add a notifier to inform the user when the app is in the background. Consider notifications, sounds, app icon badges
+
