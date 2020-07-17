@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="KGk-i7-Jjw" customClass="PeripheralCell" customModule="BluetoothExplorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="293" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="293" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Anh-rH-aMJ">
+                        <rect key="frame" x="49" y="11" width="228" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2b-f5-AU0">
+                        <rect key="frame" x="49" y="39.5" width="228" height="24.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="751" text="RSSI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbG-rp-gwN">
+                        <rect key="frame" x="16" y="52" width="25" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="W04-qF-8im"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APV-aZ-XqJ" customClass="RssiGraph" customModule="BluetoothExplorer" customModuleProvider="target">
+                        <rect key="frame" x="16" y="11" width="25" height="25"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Connected" translatesAutoresizingMaskIntoConstraints="NO" id="asO-fZ-12i">
+                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="asO-fZ-12i" secondAttribute="trailing" id="9xN-BT-fnb"/>
+                            <constraint firstItem="asO-fZ-12i" firstAttribute="top" secondItem="APV-aZ-XqJ" secondAttribute="top" id="E2U-1t-mYs"/>
+                            <constraint firstAttribute="width" constant="25" id="VZc-vN-Nfh"/>
+                            <constraint firstAttribute="height" constant="25" id="ms7-aa-RKW"/>
+                            <constraint firstAttribute="bottom" secondItem="asO-fZ-12i" secondAttribute="bottom" id="sR9-3G-ICn"/>
+                            <constraint firstItem="asO-fZ-12i" firstAttribute="leading" secondItem="APV-aZ-XqJ" secondAttribute="leading" id="waH-gN-bGr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n2b-f5-AU0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="1go-fM-GXG"/>
+                    <constraint firstItem="cbG-rp-gwN" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="4Ul-u2-sKZ"/>
+                    <constraint firstItem="n2b-f5-AU0" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="6yV-w0-gry"/>
+                    <constraint firstItem="APV-aZ-XqJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9Ft-6i-4iH"/>
+                    <constraint firstItem="n2b-f5-AU0" firstAttribute="top" secondItem="Anh-rH-aMJ" secondAttribute="bottom" constant="8" id="NoP-2A-XTy"/>
+                    <constraint firstItem="Anh-rH-aMJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="PmY-Ml-8eE"/>
+                    <constraint firstItem="Anh-rH-aMJ" firstAttribute="leading" secondItem="APV-aZ-XqJ" secondAttribute="trailing" constant="8" id="PwS-qv-fZX"/>
+                    <constraint firstItem="APV-aZ-XqJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="bIz-e4-5cu"/>
+                    <constraint firstItem="cbG-rp-gwN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cFX-Ig-XgI"/>
+                    <constraint firstItem="Anh-rH-aMJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="ckz-Y2-4gb"/>
+                    <constraint firstItem="n2b-f5-AU0" firstAttribute="leading" secondItem="cbG-rp-gwN" secondAttribute="trailing" constant="8" id="juz-9d-pfR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="connectedImage" destination="asO-fZ-12i" id="9ZL-z7-uYZ"/>
+                <outlet property="data" destination="n2b-f5-AU0" id="Nut-5Z-vdR"/>
+                <outlet property="name" destination="Anh-rH-aMJ" id="V5b-RE-Obm"/>
+                <outlet property="rssiGraph" destination="APV-aZ-XqJ" id="L39-UL-CdL"/>
+                <outlet property="rssiValue" destination="cbG-rp-gwN" id="cuA-bU-Xe9"/>
+            </connections>
+            <point key="canvasLocation" x="-235.5" y="-158.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Connected" width="37.5" height="37.5"/>
+    </resources>
+</document>
