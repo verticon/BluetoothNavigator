@@ -53,20 +53,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CentralCell" id="yR0-qC-qBN" customClass="CentralCell" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yR0-qC-qBN" id="X1R-B0-BH5">
-                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuB-Ix-Vsb">
-                                            <rect key="frame" x="8" y="0.0" width="340" height="21.5"/>
+                                            <rect key="frame" x="8" y="0.0" width="340" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hh-Xa-xPT">
-                                            <rect key="frame" x="8" y="21.5" width="340" height="18"/>
+                                            <rect key="frame" x="8" y="21" width="340" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
         <!--Central-->
         <scene sceneID="aeb-N5-rDy">
             <objects>
-                <tableViewController title="Central" id="vTe-fJ-yUj" customClass="CentralViewController" customModule="Bluetooth_Navigator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Central" id="vTe-fJ-yUj" customClass="CentralViewController" customModule="Bluetooth_Navigator" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J2p-U0-5F4" userLabel="Peripherals" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,15 +474,15 @@
                                         <rect key="frame" x="0.0" y="84" width="359" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCz-FU-Ahr" customClass="DropDownMenuButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-9d-oaH" customClass="DropDownMenuButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="105.5" y="0.0" width="55" height="30"/>
+                                                <rect key="frame" x="109.5" y="0.0" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfH-fR-Pnt" customClass="RadioButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="210.5" y="0.0" width="56" height="30"/>
+                                                <rect key="frame" x="206.5" y="0.0" width="56" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Decimal"/>
                                             </button>
@@ -566,7 +566,7 @@
         <!--Subscription Editor-->
         <scene sceneID="MbP-TN-bpa">
             <objects>
-                <viewController title="Subscription Editor" id="hug-E7-USe" customClass="SubscriptionEditorViewController" customModule="BluetoothNavigator" sceneMemberID="viewController">
+                <viewController title="Subscription Editor" id="hug-E7-USe" customClass="SubscriptionEditorViewController" customModule="Bluetooth_Navigator" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H94-wK-m3p"/>
                         <viewControllerLayoutGuide type="bottom" id="MzU-MF-Llc"/>
@@ -916,7 +916,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="PRi-HQ-T0d"/>
-        <segue reference="4ND-HH-Y4f"/>
+        <segue reference="jg6-R2-dVQ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="first" width="30" height="30"/>

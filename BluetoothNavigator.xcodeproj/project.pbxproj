@@ -160,9 +160,9 @@
 				E15C8F3C24C0AE8300AA1E18 /* LaunchScreen.storyboard */,
 				E15C8F2E24C0AE4B00AA1E18 /* LogoView.swift */,
 				E15C8F3E24C0AE8300AA1E18 /* Main.storyboard */,
-				E15C8F1D24C0A9C000AA1E18 /* Peripherals */,
-				E15C8F1C24C0A9AF00AA1E18 /* Centrals */,
 				E15C8F1B24C0A98500AA1E18 /* Beacons */,
+				E15C8F1C24C0A9AF00AA1E18 /* Centrals */,
+				E15C8F1D24C0A9C000AA1E18 /* Peripherals */,
 			);
 			path = BluetoothNavigator;
 			sourceTree = "<group>";
