@@ -123,10 +123,11 @@ class DiscoveredPeripheralViewController : BluetoothNavigatorViewController {
             setupButtons()
             characteristicsTable.reloadData()
 
-        case .descriptorsDiscovered(let characteristic): // If a User Description descriptor comes in then the characteristic's name might change.
+        case .descriptorsDiscovered(let characteristic):
+            // If a User Description descriptor comes in then the characteristic's name might change.
             for descriptor in characteristic.descriptors {
                 if descriptor.id.uuid.uuidString == CharacteristicUserDescriptionUUID.uuidString {
-                    if case let .failure(error) = descriptor.read( { result in if case .success = result { self.characteristicsTable.reloadData() } } ) {
+                    if case let .failure(error) = descriptor.read( { result in if case .success = result { self.characteristicsTable.reloadData() } }) {
                         alertUser(title: "Descriptor Read Error", body: String(describing: error))
                     }
                 }
@@ -241,14 +242,13 @@ extension DiscoveredPeripheralViewController { // UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView === servicesTable {
             let service = peripheral[indexPath.row]
-            if !(service === selectedService) {
+            if service !== selectedService {
                 selectedService = service
                 setupButtons()
-                characteristicsTable.reloadData()
             }
+            characteristicsTable.reloadData()
         }
-        else {
-            tableView.deselectRow(at: indexPath, animated: false)
-        }
+
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
