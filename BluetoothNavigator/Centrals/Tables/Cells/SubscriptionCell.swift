@@ -2,7 +2,7 @@
 import UIKit
 import MoBetterBluetooth
 
-class CentralCell: BluetoothCell {
+class SubscriptionCell: BluetoothCell {
 
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var infoLabel: UILabel!

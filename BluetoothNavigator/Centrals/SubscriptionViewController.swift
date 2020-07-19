@@ -4,7 +4,7 @@ import MoBetterBluetooth
 import VerticonsToolbox
 
 // TODO: I turned off the Bose AE2 SoundLink and it did not dissappear from the list
-class CentralViewController: UITableViewController {
+class SubscriptionViewController: UITableViewController {
 
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var scanSwitch: UISwitch!
@@ -31,14 +31,14 @@ class CentralViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         if isMovingToParent { // Pushed to the navigation stack
-            managerEventListener = manager.addListener(self, handlerClassMethod: CentralViewController.managerEventHandler)
+            managerEventListener = manager.addListener(self, handlerClassMethod: SubscriptionViewController.managerEventHandler)
             scanSwitch.isEnabled = manager.isReady
             scanSwitch.isOn = manager.isScanning
             
             manager.peripherals.forEach { peripheral in
                 peripherals.append(peripheral as! Peripheral)
                 let key = listenerKeyFor(peripheral: peripheral)
-                peripheralEventListeners[key] = peripheral.addListener(self, handlerClassMethod: CentralViewController.peripheralEventHandler)
+                peripheralEventListeners[key] = peripheral.addListener(self, handlerClassMethod: SubscriptionViewController.peripheralEventHandler)
             }
         }
     }
@@ -70,7 +70,7 @@ class CentralViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch (segue.destination, sender) {
             
-        case let (peripheralVC as DiscoveredPeripheralViewController, cell as UITableViewCell):
+        case let (peripheralVC as PeripheralViewController, cell as UITableViewCell):
             peripheralVC.peripheral = peripherals[tableView.indexPath(for: cell)!.row]
             
         case let (navigator as UINavigationController, _) where navigator.viewControllers[0] is SubscriptionEditorViewController:
@@ -119,7 +119,7 @@ class CentralViewController: UITableViewController {
             */
             tableView.reloadData()
 
-            peripheralEventListeners[peripheral.cbPeripheral.identifier.uuidString] = peripheral.addListener(self, handlerClassMethod: CentralViewController.peripheralEventHandler)
+            peripheralEventListeners[peripheral.cbPeripheral.identifier.uuidString] = peripheral.addListener(self, handlerClassMethod: SubscriptionViewController.peripheralEventHandler)
 
         case .subscriptionUpdated:
             navigationItem.title = manager.name
@@ -168,7 +168,7 @@ class CentralViewController: UITableViewController {
     }
 }
 
-extension CentralViewController { // UITableViewDataSource
+extension SubscriptionViewController { // UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -213,7 +213,7 @@ extension CentralViewController { // UITableViewDataSource
     }
 }
 
-extension CentralViewController { // UITableViewDelegate
+extension SubscriptionViewController { // UITableViewDelegate
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)

@@ -5,7 +5,7 @@ import MoBetterBluetooth
 
 // TODO: With the Characteristcs screen up, force a disconnect.
 // Insure that the Peripheral view updates correctly.
-class DiscoveredPeripheralViewController : BluetoothNavigatorViewController {
+class PeripheralViewController : BluetoothNavigatorViewController {
 
     var peripheral: Peripheral! // The presenting controller will set it.
     private var peripheralEventListener: ListenerManagement?
@@ -45,7 +45,7 @@ class DiscoveredPeripheralViewController : BluetoothNavigatorViewController {
         super.viewWillAppear(animated)
         
         if isMovingToParent { // Pushed to the navigation stack
-            peripheralEventListener = peripheral.addListener(self, handlerClassMethod: DiscoveredPeripheralViewController.peripheralEventHandler)
+            peripheralEventListener = peripheral.addListener(self, handlerClassMethod: PeripheralViewController.peripheralEventHandler)
         }
     }
     
@@ -209,7 +209,7 @@ class DiscoveredPeripheralViewController : BluetoothNavigatorViewController {
     }
 }
 
-extension DiscoveredPeripheralViewController : UITableViewDataSource {
+extension PeripheralViewController : UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -238,7 +238,7 @@ extension DiscoveredPeripheralViewController : UITableViewDataSource {
 }
 
 // TODO: Remember and restore the selected service
-extension DiscoveredPeripheralViewController { // UITableViewDelegate
+extension PeripheralViewController { // UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView === servicesTable {
             let service = peripheral[indexPath.row]

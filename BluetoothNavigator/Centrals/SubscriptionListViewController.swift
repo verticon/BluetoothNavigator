@@ -4,7 +4,7 @@ import VerticonsToolbox
 import MoBetterBluetooth
 import CoreBluetooth
 
-class SubscriptionsViewController: UITableViewController {
+class SubscriptionListViewController: UITableViewController {
 
     fileprivate var centralManagers = [CentralManager]()
 
@@ -45,7 +45,7 @@ class SubscriptionsViewController: UITableViewController {
                     if let subscriptions = loadFromUserDefaults(type: CentralManager.PeripheralSubscription.self, withKey: self.subscriptionsKey) {
                         for (index, subscription) in subscriptions.enumerated() {
                             let centralManager = CentralManager(subscription: subscription, factory: Factory.instance)
-                            _ = centralManager.addListener(self, handlerClassMethod: SubscriptionsViewController.managerEventHandler)
+                            _ = centralManager.addListener(self, handlerClassMethod: SubscriptionListViewController.managerEventHandler)
                             self.centralManagers.append(centralManager)
                             //CATransaction.setAnimationDuration(5)
                             self.tableView.insertRows(at: [IndexPath(row: index, section: 0)], with: .fade)
@@ -60,7 +60,7 @@ class SubscriptionsViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch (segue.destination, sender) {
 
-        case let (centralVC as CentralViewController, cell as UITableViewCell): // Present an existing Central
+        case let (centralVC as SubscriptionViewController, cell as UITableViewCell): // Present an existing Central
             centralVC.manager = centralManagers[tableView.indexPath(for: cell)!.row]
 
         case let (navigator as UINavigationController, _) where navigator.viewControllers[0] is SubscriptionEditorViewController: // Create a new Central's subscription
@@ -78,7 +78,7 @@ class SubscriptionsViewController: UITableViewController {
             }
 
             let centralManager = CentralManager(subscription: subscription, factory: Factory.instance)
-            _ = centralManager.addListener(self, handlerClassMethod: SubscriptionsViewController.managerEventHandler)
+            _ = centralManager.addListener(self, handlerClassMethod: SubscriptionListViewController.managerEventHandler)
 
             centralManagers.append(centralManager)
             // ToDo: If insertRows is used then the colors of the cell's backgound, gradient view are
@@ -111,7 +111,7 @@ class SubscriptionsViewController: UITableViewController {
             saveToUserDefaults(centralManagers.map{ $0.subscription }, withKey: subscriptionsKey)
 
         case let .peripheralDiscovered(peripheral):
-            let _ = peripheral.addListener(self, handlerClassMethod: SubscriptionsViewController.peripheralEventHandler)
+            let _ = peripheral.addListener(self, handlerClassMethod: SubscriptionListViewController.peripheralEventHandler)
             managerToReload = peripheral.manager
             
         case let .peripheralRemoved(peripheral):
@@ -149,7 +149,7 @@ class SubscriptionsViewController: UITableViewController {
     }
 }
 
-extension SubscriptionsViewController { // UITableViewDataSource
+extension SubscriptionListViewController { // UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -160,7 +160,7 @@ extension SubscriptionsViewController { // UITableViewDataSource
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CentralCell") as! CentralCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SubscriptionCell") as! SubscriptionCell
         let manager = centralManagers[indexPath.item]
         cell.update(with: manager)
         return cell
@@ -183,13 +183,13 @@ extension SubscriptionsViewController { // UITableViewDataSource
     }
 }
 
-extension SubscriptionsViewController { // UITableViewDelegate
+extension SubscriptionListViewController { // UITableViewDelegate
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         (cell as! BluetoothCell).prepareDisclosureIndicator()
     }
 }
 
-extension SubscriptionsViewController { // UIScrollViewDelegate
+extension SubscriptionListViewController { // UIScrollViewDelegate
     override func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         // TODO: Dragging up will sometimes result in the tableCellGradientFirst being chosen???
         let draggingUp = scrollView.panGestureRecognizer.translation(in: scrollView.superview).y < 0
