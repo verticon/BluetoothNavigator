@@ -161,7 +161,7 @@
 				E15C8F2E24C0AE4B00AA1E18 /* LogoView.swift */,
 				E15C8F3E24C0AE8300AA1E18 /* Main.storyboard */,
 				E15C8F1B24C0A98500AA1E18 /* Beacons */,
-				E15C8F1C24C0A9AF00AA1E18 /* Centrals */,
+				E15C8F1C24C0A9AF00AA1E18 /* Peripherals */,
 			);
 			path = BluetoothNavigator;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			path = Beacons;
 			sourceTree = "<group>";
 		};
-		E15C8F1C24C0A9AF00AA1E18 /* Centrals */ = {
+		E15C8F1C24C0A9AF00AA1E18 /* Peripherals */ = {
 			isa = PBXGroup;
 			children = (
 				E15C8F6C24C0B31E00AA1E18 /* SubscriptionViewController.swift */,
@@ -189,7 +189,7 @@
 				E15C8F7024C0B31E00AA1E18 /* SubscriptionListViewController.swift */,
 				E15C8F1E24C0AA9100AA1E18 /* Tables */,
 			);
-			path = Centrals;
+			path = Peripherals;
 			sourceTree = "<group>";
 		};
 		E15C8F1E24C0AA9100AA1E18 /* Tables */ = {
