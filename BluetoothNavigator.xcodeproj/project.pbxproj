@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10EC4FD24C5EF0E00C56D81 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E10EC4FC24C5EF0D00C56D81 /* README.md */; };
 		E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */; };
 		E15C8F3024C0AE4B00AA1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */; };
 		E15C8F3124C0AE4B00AA1E18 /* CreateIdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */; };
@@ -65,10 +66,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E10EC4FC24C5EF0D00C56D81 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E15C8F0424C0A40600AA1E18 /* Bluetooth Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bluetooth Navigator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E15C8F2024C0AD5A00AA1E18 /* ToDo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToDo.txt; sourceTree = "<group>"; };
-		E15C8F2124C0AD5A00AA1E18 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIdentifierViewController.swift; sourceTree = "<group>"; };
 		E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentifierCell.xib; sourceTree = "<group>"; };
@@ -125,8 +126,8 @@
 		E15C8EFB24C0A40600AA1E18 = {
 			isa = PBXGroup;
 			children = (
+				E10EC4FC24C5EF0D00C56D81 /* README.md */,
 				E15C8F4C24C0B2AE00AA1E18 /* Settings.bundle */,
-				E15C8F2124C0AD5A00AA1E18 /* ReadMe.md */,
 				E15C8F2024C0AD5A00AA1E18 /* ToDo.txt */,
 				E15C8F0624C0A40600AA1E18 /* BluetoothNavigator */,
 				E15C8F0524C0A40600AA1E18 /* Products */,
@@ -291,6 +292,7 @@
 				E15C8F6224C0B30500AA1E18 /* ServiceCell.xib in Resources */,
 				E15C8F4D24C0B2AE00AA1E18 /* Settings.bundle in Resources */,
 				E15C8F3224C0AE4B00AA1E18 /* IdentifierCell.xib in Resources */,
+				E10EC4FD24C5EF0E00C56D81 /* README.md in Resources */,
 				E15C8F4024C0AE8300AA1E18 /* LaunchScreen.storyboard in Resources */,
 				E15C8F6424C0B30500AA1E18 /* PeripheralCell.xib in Resources */,
 			);
