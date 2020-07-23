@@ -11,6 +11,21 @@ class BluetoothCell: UITableViewCell {
         backgroundView = gradientView
 
         tintColor = .bluetoothBlue
+
+        func setup(view: UIView) {
+            for subview in view.subviews {
+                if let label = subview as? UILabel {
+                    label.textColor = .bluetoothBlue
+                    label.adjustsFontSizeToFitWidth = true
+                    label.minimumScaleFactor = 0.1
+                }
+                else {
+                    setup(view: subview)
+                }
+            }
+        }
+
+        setup(view: self)
     }
 
     func prepareDisclosureIndicator() {

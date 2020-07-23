@@ -19,8 +19,6 @@ class ServiceCell: BluetoothCell {
 
         uuidLabelZeroHeightConstraint = NSLayoutConstraint(item: uuidLabel, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 0)
 
-        nameLabel.textColor = .bluetoothBlue
-        uuidLabel.textColor = .bluetoothBlue
         dropDownButton.tintColor = .bluetoothBlue
     }
 
@@ -29,7 +27,9 @@ class ServiceCell: BluetoothCell {
         self.service = service
 
         nameLabel.text? = service.name
-        
+
+        // If the service has a name (otherwise uuid is used) then
+        // enable the drop down so that the user has a way to see the uuid.
         if service.name != service.id.uuid.uuidString {
             uuidLabel.text? = service.id.uuid.uuidString
 

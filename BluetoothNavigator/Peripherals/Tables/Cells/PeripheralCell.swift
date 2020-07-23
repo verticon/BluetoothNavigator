@@ -10,14 +10,6 @@ class PeripheralCell: BluetoothCell {
     @IBOutlet weak var rssiGraph: RssiGraph!
     @IBOutlet weak var connectedImage: UIImageView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-
-        name.textColor = UIColor.bluetoothBlue
-        data.textColor = UIColor.bluetoothBlue
-        rssiValue.textColor = UIColor.bluetoothBlue
-    }
-    
     func update(with peripheral: Peripheral) {
         name.text = peripheral.name
         updateLocationData(using: peripheral)
