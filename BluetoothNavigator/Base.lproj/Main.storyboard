@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -49,24 +48,24 @@
             <objects>
                 <tableViewController title="Subscription List" id="e5H-n1-M0g" customClass="SubscriptionListViewController" customModule="Bluetooth_Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="efg-Ag-SZB" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SubscriptionCell" id="yR0-qC-qBN" customClass="SubscriptionCell" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yR0-qC-qBN" id="X1R-B0-BH5">
-                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="569" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuB-Ix-Vsb">
-                                            <rect key="frame" x="8" y="0.0" width="340" height="21"/>
+                                            <rect key="frame" x="8" y="0.0" width="561" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hh-Xa-xPT">
-                                            <rect key="frame" x="8" y="21" width="340" height="18"/>
+                                            <rect key="frame" x="8" y="21.5" width="561" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -111,22 +110,22 @@
         <!--Subscription-->
         <scene sceneID="aeb-N5-rDy">
             <objects>
-                <tableViewController id="vTe-fJ-yUj" customClass="SubscriptionViewController" customModule="Bluetooth_Navigator" sceneMemberID="viewController">
+                <tableViewController id="vTe-fJ-yUj" customClass="AdvertiserListViewController" customModule="Bluetooth_Navigator" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="J2p-U0-5F4" userLabel="Peripherals" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="569"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="ly3-f2-Z7E" customClass="BluetoothNavigatorTableHeader" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subscription Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAz-9n-vCL">
-                                    <rect key="frame" x="114.5" y="8" width="146" height="21"/>
+                                    <rect key="frame" x="227" y="8" width="146" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e5J-TJ-9Hy" customClass="TitledSwitch" customModule="VerticonsToolbox">
-                                    <rect key="frame" x="163" y="30" width="51" height="31"/>
+                                    <rect key="frame" x="275.5" y="30" width="51" height="31"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="title" value="Scan"/>
                                         <userDefinedRuntimeAttribute type="number" keyPath="titleSize">
@@ -182,18 +181,18 @@
                         <viewControllerLayoutGuide type="top" id="p1Y-rx-2B6"/>
                         <viewControllerLayoutGuide type="bottom" id="OfE-Ot-GuW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Vvc-wq-p8o" customClass="BluetoothNavigatorView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="525"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="Vvc-wq-p8o" customClass="BluetoothNavigatorView" customModule="Bluetooth_Navigator" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kKL-Gv-ERu" userLabel="Services" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="16" y="71" width="343" height="210"/>
+                                <rect key="frame" x="20" y="71" width="560" height="183"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="3aW-LD-b66" userLabel="Header" customClass="BluetoothNavigatorTableHeader" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n8B-WV-lGM" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                            <rect key="frame" x="99" y="3" width="145" height="29"/>
+                                            <rect key="frame" x="207.5" y="3" width="145" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                             <state key="normal" title="Discover Services"/>
@@ -216,13 +215,13 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9s-HK-YXq" userLabel="Characteristics" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="16" y="307" width="343" height="210"/>
+                                <rect key="frame" x="20" y="261" width="560" height="183"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="e47-u0-qC0" userLabel="Header" customClass="BluetoothNavigatorTableHeader" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="35"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-20-SnO" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                            <rect key="frame" x="74" y="3" width="195" height="29"/>
+                                            <rect key="frame" x="182.5" y="3" width="195" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                             <state key="normal" title="Discover Characteristics"/>
@@ -238,14 +237,14 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CharacteristicCell" rowHeight="41" id="a5C-Yh-xgf" customClass="CharacteristicCell" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="63" width="343" height="41"/>
+                                        <rect key="frame" x="0.0" y="63" width="560" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a5C-Yh-xgf" id="sXs-Ti-uLO">
-                                            <rect key="frame" x="0.0" y="0.0" width="317" height="41"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="534" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbY-la-nRm">
-                                                    <rect key="frame" x="0.0" y="0.0" width="317" height="41"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="534" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -273,13 +272,13 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peripheral Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luL-P0-FwB">
-                                <rect key="frame" x="124" y="8" width="127" height="21"/>
+                                <rect key="frame" x="236.5" y="8" width="127" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hL-T7-taR" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="154" y="37" width="67" height="26"/>
+                                <rect key="frame" x="266.5" y="37" width="67" height="26"/>
                                 <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                 <state key="normal" title="Connect"/>
                                 <connections>
@@ -330,23 +329,23 @@
                         <viewControllerLayoutGuide type="bottom" id="ezP-l8-S4e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xOg-lv-3yw" customClass="BluetoothNavigatorView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characteristic Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhZ-O5-Ybz">
-                                <rect key="frame" x="24" y="52" width="327" height="18"/>
+                                <rect key="frame" x="28" y="58" width="544" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Buz-pq-ceV" userLabel="Descriptors" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="16" y="208" width="343" height="353"/>
+                                <rect key="frame" x="20" y="214" width="560" height="280"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="kMW-OZ-PL2" userLabel="Header" customClass="BluetoothNavigatorTableHeader" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOh-D0-WrN" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                            <rect key="frame" x="96" y="9" width="151" height="26"/>
+                                            <rect key="frame" x="204.5" y="9" width="151" height="26"/>
                                             <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                             <state key="normal" title="Discover Descriptors"/>
                                             <connections>
@@ -361,10 +360,10 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DescriptorCell" rowHeight="64" id="kna-nv-exS" customClass="DescriptorCell" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="343" height="64"/>
+                                        <rect key="frame" x="0.0" y="72" width="560" height="64"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kna-nv-exS" id="7L1-z7-9lT">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="64"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="64"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sam-9X-7jW">
@@ -403,10 +402,10 @@
                                 </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uYz-50-LGX" userLabel="Controls Stack">
-                                <rect key="frame" x="8" y="78" width="359" height="114"/>
+                                <rect key="frame" x="8" y="84" width="584" height="114"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3ya-wU-Uyx" userLabel="Operations">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="584" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDc-ix-VsH" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
@@ -420,7 +419,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yof-o8-2Qj" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                                <rect key="frame" x="154" y="0.0" width="45" height="30"/>
+                                                <rect key="frame" x="266.5" y="0.0" width="45" height="30"/>
                                                 <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
                                                 <state key="normal" title="Write"/>
                                                 <connections>
@@ -428,7 +427,7 @@
                                                 </connections>
                                             </button>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wyl-LL-qfw" customClass="TitledSwitch" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="310" y="0.0" width="51" height="30"/>
+                                                <rect key="frame" x="535" y="0.0" width="51" height="30"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="Notify"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="titleSize">
@@ -442,20 +441,20 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TKA-sf-Qxy" userLabel="Value">
-                                        <rect key="frame" x="0.0" y="42" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="42" width="584" height="30"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="27p-pp-Kfv">
-                                                <rect key="frame" x="0.0" y="0.0" width="215.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="350.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82T-1c-qKz" customClass="RadioButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="215.5" y="0.0" width="102.5" height="30"/>
+                                                <rect key="frame" x="350.5" y="0.0" width="192.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Number"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSK-VZ-lcq" customClass="RadioButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="318" y="0.0" width="41" height="30"/>
+                                                <rect key="frame" x="543" y="0.0" width="41" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="gcd-CK-zg9"/>
                                                 </constraints>
@@ -468,23 +467,23 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="MBm-rY-HlX" userLabel="Format">
-                                        <rect key="frame" x="0.0" y="84" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="84" width="584" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCz-FU-Ahr" customClass="DropDownMenuButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-9d-oaH" customClass="DropDownMenuButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="105.5" y="0.0" width="55" height="30"/>
+                                                <rect key="frame" x="184.5" y="0.0" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfH-fR-Pnt" customClass="RadioButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="210.5" y="0.0" width="56" height="30"/>
+                                                <rect key="frame" x="356.5" y="0.0" width="56" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Decimal"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6m-te-U0P" customClass="RadioButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="329" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="554" y="0.0" width="30" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Hex"/>
                                             </button>
@@ -569,17 +568,17 @@
                         <viewControllerLayoutGuide type="bottom" id="MzU-MF-Llc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="evJ-qC-JeM" customClass="BluetoothNavigatorView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGF-BL-7fV">
-                                <rect key="frame" x="24" y="71" width="55.5" height="20.5"/>
+                                <rect key="frame" x="28" y="71" width="164" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xxV-Nk-M3B">
-                                <rect key="frame" x="87.5" y="64" width="200" height="34"/>
+                                <rect key="frame" x="200" y="64" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="e6R-e4-hz2"/>
                                 </constraints>
@@ -587,19 +586,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q2b-b8-P8p" userLabel="Services" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="16" y="131" width="343" height="250"/>
+                                <rect key="frame" x="20" y="64" width="560" height="250"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="hFW-X4-nbL" userLabel="Header">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2K-qC-HcC">
-                                            <rect key="frame" x="139" y="12" width="65.5" height="20.5"/>
+                                            <rect key="frame" x="247.5" y="12" width="65.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubB-vn-Lrv">
-                                            <rect key="frame" x="310" y="10" width="25" height="24"/>
+                                            <rect key="frame" x="527" y="10" width="25" height="24"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="vyU-98-ukr" kind="presentation" identifier="GetServiceId" id="Dey-1d-o6B"/>
@@ -615,22 +614,22 @@
                                 </view>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vKc-Rb-jSm" userLabel="Characteristics" customClass="BluetoothNavigatorTableView" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="16" y="389" width="343" height="250"/>
+                                <rect key="frame" x="20" y="322" width="560" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="reu-7f-RgJ"/>
                                 </constraints>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="ybN-xC-IQc" userLabel="Header">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characteristics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBT-fS-GKT">
-                                            <rect key="frame" x="114" y="12" width="115.5" height="20.5"/>
+                                            <rect key="frame" x="222.5" y="12" width="115.5" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="contactAdd" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfS-UX-gP7">
-                                            <rect key="frame" x="310" y="10" width="25" height="24"/>
+                                            <rect key="frame" x="527" y="10" width="25" height="24"/>
                                             <connections>
                                                 <segue destination="vyU-98-ukr" kind="presentation" identifier="GetCharacteristicId" id="PRi-HQ-T0d"/>
                                             </connections>
@@ -645,7 +644,7 @@
                                 </view>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="tv1-s4-Kvy">
-                                <rect key="frame" x="49" y="106" width="277" height="31"/>
+                                <rect key="frame" x="161.5" y="106" width="277" height="31"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pPf-fw-2eb" customClass="TitledSwitch" customModule="VerticonsToolbox">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -746,15 +745,15 @@
             <objects>
                 <tableViewController title="Beacon Regions" id="Rs1-kN-9Wu" customClass="BeaconRegionsTableViewController" customModule="Bluetooth_Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iGb-CP-g2V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Beacon Region" id="P6X-tQ-jcn">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P6X-tQ-jcn" id="EBS-O3-DGj">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -810,21 +809,21 @@
             <objects>
                 <tableViewController title="Create Identifier" id="vEc-B5-of7" customClass="CreateIdentifierViewController" customModule="Bluetooth_Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="bxh-vN-fTn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Name" id="qmk-Tf-SeF">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Uvu-9L-Ooq">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uvu-9L-Ooq" id="ipp-DD-X2D">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CiD-0c-UG3">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -842,14 +841,14 @@
                             <tableViewSection headerTitle="UUID" id="hzV-4c-Fh0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eQl-nT-zaE">
-                                        <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="155.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eQl-nT-zaE" id="ssr-ar-kDa">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5d-RI-QTY">
-                                                    <rect key="frame" x="16" y="11" width="343" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="560" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                                                 </textField>

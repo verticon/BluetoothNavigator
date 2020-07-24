@@ -42,7 +42,7 @@
 		E15C8F6924C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6724C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift */; };
 		E15C8F7124C0B31E00AA1E18 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6A24C0B31E00AA1E18 /* PeripheralViewController.swift */; };
 		E15C8F7224C0B31E00AA1E18 /* SubscriptionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */; };
-		E15C8F7324C0B31E00AA1E18 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6C24C0B31E00AA1E18 /* SubscriptionViewController.swift */; };
+		E15C8F7324C0B31E00AA1E18 /* AdvertiserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6C24C0B31E00AA1E18 /* AdvertiserListViewController.swift */; };
 		E15C8F7424C0B31E00AA1E18 /* CharacteristicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6D24C0B31E00AA1E18 /* CharacteristicViewController.swift */; };
 		E15C8F7524C0B31E00AA1E18 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6E24C0B31E00AA1E18 /* Factory.swift */; };
 		E15C8F7624C0B31E00AA1E18 /* RssiGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6F24C0B31E00AA1E18 /* RssiGraph.swift */; };
@@ -101,7 +101,7 @@
 		E15C8F6724C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorTableHeader.swift; sourceTree = "<group>"; };
 		E15C8F6A24C0B31E00AA1E18 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionEditorViewController.swift; sourceTree = "<group>"; };
-		E15C8F6C24C0B31E00AA1E18 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		E15C8F6C24C0B31E00AA1E18 /* AdvertiserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertiserListViewController.swift; sourceTree = "<group>"; };
 		E15C8F6D24C0B31E00AA1E18 /* CharacteristicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicViewController.swift; sourceTree = "<group>"; };
 		E15C8F6E24C0B31E00AA1E18 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		E15C8F6F24C0B31E00AA1E18 /* RssiGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RssiGraph.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		E15C8F1C24C0A9AF00AA1E18 /* Peripherals */ = {
 			isa = PBXGroup;
 			children = (
-				E15C8F6C24C0B31E00AA1E18 /* SubscriptionViewController.swift */,
+				E15C8F6C24C0B31E00AA1E18 /* AdvertiserListViewController.swift */,
 				E15C8F6D24C0B31E00AA1E18 /* CharacteristicViewController.swift */,
 				E15C8F6A24C0B31E00AA1E18 /* PeripheralViewController.swift */,
 				E15C8F6E24C0B31E00AA1E18 /* Factory.swift */,
@@ -319,7 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E15C8F6824C0B31100AA1E18 /* BluetoothNavigatorTableView.swift in Sources */,
-				E15C8F7324C0B31E00AA1E18 /* SubscriptionViewController.swift in Sources */,
+				E15C8F7324C0B31E00AA1E18 /* AdvertiserListViewController.swift in Sources */,
 				E15C8F6524C0B30500AA1E18 /* CharacteristicCell.swift in Sources */,
 				E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */,
 				E15C8F6124C0B30500AA1E18 /* SubscriptionCell.swift in Sources */,

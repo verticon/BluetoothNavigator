@@ -60,7 +60,7 @@ class SubscriptionListViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch (segue.destination, sender) {
 
-        case let (centralVC as SubscriptionViewController, cell as UITableViewCell): // Present an existing Central
+        case let (centralVC as AdvertiserListViewController, cell as UITableViewCell): // Present an existing Central
             centralVC.manager = centralManagers[tableView.indexPath(for: cell)!.row]
 
         case let (navigator as UINavigationController, _) where navigator.viewControllers[0] is SubscriptionEditorViewController: // Create a new Central's subscription
