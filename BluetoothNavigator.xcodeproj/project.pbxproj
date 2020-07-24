@@ -12,7 +12,6 @@
 		E15C8F3024C0AE4B00AA1E18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */; };
 		E15C8F3124C0AE4B00AA1E18 /* CreateIdentifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */; };
 		E15C8F3224C0AE4B00AA1E18 /* IdentifierCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */; };
-		E15C8F3424C0AE4B00AA1E18 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2824C0AE4A00AA1E18 /* Extensions.swift */; };
 		E15C8F3524C0AE4B00AA1E18 /* BluetoothNavigatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */; };
 		E15C8F3624C0AE4B00AA1E18 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */; };
 		E15C8F3724C0AE4B00AA1E18 /* BluetoothNavigatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */; };
@@ -39,8 +38,8 @@
 		E15C8F6324C0B30500AA1E18 /* DescriptorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5B24C0B30500AA1E18 /* DescriptorCell.swift */; };
 		E15C8F6424C0B30500AA1E18 /* PeripheralCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15C8F5C24C0B30500AA1E18 /* PeripheralCell.xib */; };
 		E15C8F6524C0B30500AA1E18 /* CharacteristicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F5D24C0B30500AA1E18 /* CharacteristicCell.swift */; };
-		E15C8F6824C0B31100AA1E18 /* BluetoothExplorerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6624C0B31100AA1E18 /* BluetoothExplorerTableView.swift */; };
-		E15C8F6924C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6724C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift */; };
+		E15C8F6824C0B31100AA1E18 /* BluetoothNavigatorTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6624C0B31100AA1E18 /* BluetoothNavigatorTableView.swift */; };
+		E15C8F6924C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6724C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift */; };
 		E15C8F7124C0B31E00AA1E18 /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6A24C0B31E00AA1E18 /* PeripheralViewController.swift */; };
 		E15C8F7224C0B31E00AA1E18 /* SubscriptionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */; };
 		E15C8F7324C0B31E00AA1E18 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15C8F6C24C0B31E00AA1E18 /* SubscriptionViewController.swift */; };
@@ -74,7 +73,6 @@
 		E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIdentifierViewController.swift; sourceTree = "<group>"; };
 		E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IdentifierCell.xib; sourceTree = "<group>"; };
 		E15C8F2724C0AE4A00AA1E18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E15C8F2824C0AE4A00AA1E18 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorViewController.swift; sourceTree = "<group>"; };
 		E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorView.swift; sourceTree = "<group>"; };
@@ -99,8 +97,8 @@
 		E15C8F5B24C0B30500AA1E18 /* DescriptorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptorCell.swift; sourceTree = "<group>"; };
 		E15C8F5C24C0B30500AA1E18 /* PeripheralCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeripheralCell.xib; sourceTree = "<group>"; };
 		E15C8F5D24C0B30500AA1E18 /* CharacteristicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicCell.swift; sourceTree = "<group>"; };
-		E15C8F6624C0B31100AA1E18 /* BluetoothExplorerTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothExplorerTableView.swift; sourceTree = "<group>"; };
-		E15C8F6724C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothExplorerTableHeader.swift; sourceTree = "<group>"; };
+		E15C8F6624C0B31100AA1E18 /* BluetoothNavigatorTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorTableView.swift; sourceTree = "<group>"; };
+		E15C8F6724C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothNavigatorTableHeader.swift; sourceTree = "<group>"; };
 		E15C8F6A24C0B31E00AA1E18 /* PeripheralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		E15C8F6B24C0B31E00AA1E18 /* SubscriptionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionEditorViewController.swift; sourceTree = "<group>"; };
 		E15C8F6C24C0B31E00AA1E18 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
@@ -148,20 +146,14 @@
 			children = (
 				E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */,
 				E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */,
-				E15C8F2F24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift */,
-				E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */,
-				E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */,
-				E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */,
 				E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */,
-				E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */,
-				E15C8F2824C0AE4A00AA1E18 /* Extensions.swift */,
-				E15C8F2C24C0AE4A00AA1E18 /* IdentifierCell.swift */,
-				E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */,
 				E15C8F2724C0AE4A00AA1E18 /* Info.plist */,
 				E15C8F3C24C0AE8300AA1E18 /* LaunchScreen.storyboard */,
 				E15C8F2E24C0AE4B00AA1E18 /* LogoView.swift */,
 				E15C8F3E24C0AE8300AA1E18 /* Main.storyboard */,
+				E16D5FAB24CAF548008B984E /* Base */,
 				E15C8F1B24C0A98500AA1E18 /* Beacons */,
+				E16D5FAC24CAF5CA008B984E /* Identifier */,
 				E15C8F1C24C0A9AF00AA1E18 /* Peripherals */,
 			);
 			path = BluetoothNavigator;
@@ -196,8 +188,6 @@
 		E15C8F1E24C0AA9100AA1E18 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
-				E15C8F6724C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift */,
-				E15C8F6624C0B31100AA1E18 /* BluetoothExplorerTableView.swift */,
 				E15C8F1F24C0AAA200AA1E18 /* Cells */,
 			);
 			path = Tables;
@@ -225,6 +215,29 @@
 				E15C8F4424C0AF4500AA1E18 /* VerticonsToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E16D5FAB24CAF548008B984E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F2F24C0AE4B00AA1E18 /* BluetoothNavigatorButton.swift */,
+				E15C8F6724C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift */,
+				E15C8F6624C0B31100AA1E18 /* BluetoothNavigatorTableView.swift */,
+				E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */,
+				E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */,
+				E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E16D5FAC24CAF5CA008B984E /* Identifier */ = {
+			isa = PBXGroup;
+			children = (
+				E15C8F2524C0AE4A00AA1E18 /* CreateIdentifierViewController.swift */,
+				E15C8F2C24C0AE4A00AA1E18 /* IdentifierCell.swift */,
+				E15C8F2624C0AE4A00AA1E18 /* IdentifierCell.xib */,
+			);
+			path = Identifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15C8F6824C0B31100AA1E18 /* BluetoothExplorerTableView.swift in Sources */,
+				E15C8F6824C0B31100AA1E18 /* BluetoothNavigatorTableView.swift in Sources */,
 				E15C8F7324C0B31E00AA1E18 /* SubscriptionViewController.swift in Sources */,
 				E15C8F6524C0B30500AA1E18 /* CharacteristicCell.swift in Sources */,
 				E15C8F0824C0A40600AA1E18 /* AppDelegate.swift in Sources */,
@@ -315,7 +328,7 @@
 				E15C8F5324C0B2F500AA1E18 /* BeaconRegionHeader.swift in Sources */,
 				E15C8F7424C0B31E00AA1E18 /* CharacteristicViewController.swift in Sources */,
 				E15C8F6324C0B30500AA1E18 /* DescriptorCell.swift in Sources */,
-				E15C8F6924C0B31100AA1E18 /* BluetoothExplorerTableHeader.swift in Sources */,
+				E15C8F6924C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift in Sources */,
 				E15C8F5424C0B2F500AA1E18 /* BeaconNotifier.swift in Sources */,
 				E15C8F5E24C0B30500AA1E18 /* BluetoothCell.swift in Sources */,
 				E15C8F7624C0B31E00AA1E18 /* RssiGraph.swift in Sources */,
@@ -331,7 +344,6 @@
 				E15C8F3524C0AE4B00AA1E18 /* BluetoothNavigatorViewController.swift in Sources */,
 				E15C8F7724C0B31E00AA1E18 /* SubscriptionListViewController.swift in Sources */,
 				E15C8F3924C0AE4B00AA1E18 /* BluetoothNavigatorTheme.swift in Sources */,
-				E15C8F3424C0AE4B00AA1E18 /* Extensions.swift in Sources */,
 				E15C8F6024C0B30500AA1E18 /* ServiceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
