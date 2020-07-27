@@ -33,6 +33,9 @@ class PeripheralViewController : BluetoothNavigatorViewController {
         let nib = UINib(nibName: String(describing: ServiceCell.self), bundle: Bundle(for: ServiceCell.self))
         servicesTable.register(nib, forCellReuseIdentifier: serviceCellReuseId)
 
+        advertismentDropDown.listBackgroundColor = .gray
+        advertismentDropDown.itemBackgroundColor = .bluetoothBlue
+        advertismentDropDown.itemTextColor = .white
         _ = advertismentDropDown.setList(items: peripheral.advertisement.list ?? ["<no advertisements>"])
 
         servicesTable.name = "Services"

@@ -192,7 +192,7 @@ extension AdvertiserListViewController { // UITableViewDataSource
         else {
             var button: DropDownListButton! = cell.accessoryView as? DropDownListButton
             if button == nil {
-                button = DropDownListButton()
+                button = DropDownListButton(listBackgroundColor: .gray, itemBackgroundColor: .bluetoothBlue, itemTextColor: .white)
                 button.color = UIColor.bluetoothBlue
                 cell.accessoryView = button
             }
