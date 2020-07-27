@@ -317,7 +317,7 @@ class CharacteristicViewController: UIViewController {
             dismissKeyboard()
             
             value.text = ""
-            displayValue()
+            _ = displayValue()
             
             reconfigure()
         }
@@ -354,7 +354,7 @@ class CharacteristicViewController: UIViewController {
 
         let _ = stringEncodingButton.setMenu(items: StringEncoding.all, initialSelection: StringEncoding(rawValue: .utf8)!.index!) { _ in changeHandler() }
 
-        valueTypeButtonGroup = RadioButtonGroup(buttons: stringButton, numberButton, initialSelection: numberButton) { _ in changeHandler() }
+        valueTypeButtonGroup = RadioButtonGroup(buttons: stringButton, numberButton, initialSelection: stringButton) { _ in changeHandler() }
 
         radixButtonGroup = RadioButtonGroup(buttons: decimalButton, hexButton, initialSelection: decimalButton) { _ in changeHandler() }
 

@@ -9,6 +9,9 @@ class BluetoothCell: UITableViewCell {
 
         let gradientView = GradientView()
         backgroundView = gradientView
+        let selectedView = UIView()
+        selectedView.backgroundColor = .bluetoothBlue
+        selectedBackgroundView = selectedView
 
         tintColor = .bluetoothBlue
 

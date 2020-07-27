@@ -29,9 +29,20 @@ class BluetoothNavigatorTheme {
             BluetoothNavigatorTableHeader.appearance().backgroundColor = .darkGray
         }
         
+        func bluetoothCell() {
+        }
+        
         func gradientView() {
             GradientView.appearance().firstColor = .bluetoothNavigatorGradientFirst
             GradientView.appearance().secondColor = .bluetoothNavigatorGradientSecond
+        }
+        
+        func textField() {
+            UITextField.appearance().borderWidth = 1
+            UITextField.appearance().borderColor = .darkGray
+            UITextField.appearance().cornerRadius = 5
+            UITextField.appearance().textColor = .white
+            UITextField.appearance().backgroundColor = .clear
         }
         
         func textView() {
@@ -71,7 +82,9 @@ class BluetoothNavigatorTheme {
         bluetoothNavigatorView()
         bluetoothNavigatorTableView()
         bluetoothNavigatorTableHeader()
+        bluetoothCell()
         gradientView()
+        textField()
         textView()
         switches()
         buttons()

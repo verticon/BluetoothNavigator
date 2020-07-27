@@ -145,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				E15C8F0724C0A40600AA1E18 /* AppDelegate.swift */,
+				E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */,
 				E15C8F2424C0AE4A00AA1E18 /* Assets.xcassets */,
 				E15C8F2A24C0AE4A00AA1E18 /* Colors.swift */,
 				E15C8F2724C0AE4A00AA1E18 /* Info.plist */,
@@ -224,7 +225,6 @@
 				E15C8F6724C0B31100AA1E18 /* BluetoothNavigatorTableHeader.swift */,
 				E15C8F6624C0B31100AA1E18 /* BluetoothNavigatorTableView.swift */,
 				E15C8F2B24C0AE4A00AA1E18 /* BluetoothNavigatorView.swift */,
-				E15C8F2D24C0AE4A00AA1E18 /* BluetoothNavigatorTheme.swift */,
 				E15C8F2924C0AE4A00AA1E18 /* BluetoothNavigatorViewController.swift */,
 			);
 			path = Base;
