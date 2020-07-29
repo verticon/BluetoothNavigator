@@ -35,6 +35,7 @@ class PeripheralViewController : BluetoothNavigatorViewController {
 
         BluetoothNavigatorTheme.setDropDownColors(of: advertismentDropDown)
         advertismentDropDown.setList(title: "Advertising Data", items: peripheral.advertisement.list ?? ["<no advertisements>"])
+        advertismentDropDown.size *= 2
 
         servicesTable.name = "Services"
         characteristicsTable.name = "Charateristics"
@@ -203,6 +204,9 @@ class PeripheralViewController : BluetoothNavigatorViewController {
             else {
                 connect.setTitle("<No Advertisments>", for: .normal)
             }
+
+        default:
+            connect.setTitle("<?????>", for: .normal)
         }
     }
 

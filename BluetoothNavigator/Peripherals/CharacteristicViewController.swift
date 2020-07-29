@@ -54,6 +54,7 @@ class CharacteristicViewController: UIViewController {
 
         BluetoothNavigatorTheme.setDropDownColors(of: propertiesDropDown)
         propertiesDropDown.setList(title: "Properties", items: characteristic.properties.all)
+        propertiesDropDown.size *= 2
 
         controls.addHorizontalSeparators(color: .black)
 
