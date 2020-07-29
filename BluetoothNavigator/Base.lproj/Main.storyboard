@@ -53,20 +53,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SubscriptionCell" id="yR0-qC-qBN" customClass="SubscriptionCell" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yR0-qC-qBN" id="X1R-B0-BH5">
-                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="348" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuB-Ix-Vsb">
-                                            <rect key="frame" x="8" y="0.0" width="340" height="21"/>
+                                            <rect key="frame" x="8" y="0.0" width="340" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hh-Xa-xPT">
-                                            <rect key="frame" x="8" y="21" width="340" height="18"/>
+                                            <rect key="frame" x="8" y="21.5" width="340" height="18"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -225,7 +225,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-20-SnO" customClass="BluetoothNavigatorButton" customModule="Bluetooth_Navigator" customModuleProvider="target">
-                                            <rect key="frame" x="74" y="3" width="195" height="29"/>
+                                            <rect key="frame" x="5" y="3" width="333" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
                                             <state key="normal" title="Discover Characteristics"/>
@@ -235,6 +235,7 @@
                                         </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="MEG-20-SnO" firstAttribute="width" secondItem="e47-u0-qC0" secondAttribute="width" constant="-10" id="QU0-g4-cBQ"/>
                                         <constraint firstItem="MEG-20-SnO" firstAttribute="centerX" secondItem="e47-u0-qC0" secondAttribute="centerX" id="bnW-FT-V8p"/>
                                         <constraint firstItem="MEG-20-SnO" firstAttribute="centerY" secondItem="e47-u0-qC0" secondAttribute="centerY" id="yuZ-91-yO4"/>
                                     </constraints>
@@ -474,15 +475,15 @@
                                         <rect key="frame" x="0.0" y="84" width="359" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCz-FU-Ahr" customClass="DropDownMenuButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSy-9d-oaH" customClass="DropDownMenuButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="109.5" y="0.0" width="30" height="30"/>
+                                                <rect key="frame" x="105.5" y="0.0" width="55" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfH-fR-Pnt" customClass="RadioButton" customModule="VerticonsToolbox">
-                                                <rect key="frame" x="206.5" y="0.0" width="56" height="30"/>
+                                                <rect key="frame" x="210.5" y="0.0" width="56" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Decimal"/>
                                             </button>

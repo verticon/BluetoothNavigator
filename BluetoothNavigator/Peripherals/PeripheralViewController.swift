@@ -41,6 +41,8 @@ class PeripheralViewController : BluetoothNavigatorViewController {
         characteristicsTable.name = "Charateristics"
 
         setupButtons()
+
+        discoverCharacteristics.titleLabel?.adjustsFontSizeToFitWidth = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
