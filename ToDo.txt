@@ -6,3 +6,6 @@ Add a notifier to inform the user when the app is in the background. Consider no
 
 Look into connection attempt timeouts. I tried to connet to an iPhone and the state remained in "connecting" for a long time.
 
+If the Characteristic view is on screen and a popuup (such as the Advertising Data) is being displayed and the connection is broken
+causing the Charateristic view to be popped then the popup remains on the screen.
+

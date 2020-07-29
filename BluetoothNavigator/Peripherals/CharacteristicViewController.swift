@@ -52,7 +52,8 @@ class CharacteristicViewController: UIViewController {
 
         setupFormatButtons()
 
-        let _ = propertiesDropDown.setList(items: characteristic.properties.all)
+        BluetoothNavigatorTheme.setDropDownColors(of: propertiesDropDown)
+        propertiesDropDown.setList(title: "Properties", items: characteristic.properties.all)
 
         controls.addHorizontalSeparators(color: .black)
 
@@ -341,7 +342,8 @@ class CharacteristicViewController: UIViewController {
         }
         
 
-        let _ = numberTypeButton.setMenu(items: NumericType.all, initialSelection: NumericType.uint8.index) { type in
+        BluetoothNavigatorTheme.setDropDownColors(of: numberTypeButton)
+        numberTypeButton.setMenu(title: "Type", items: NumericType.all, initialSelection: NumericType.uint8.index) { type in
 
             changeHandler()
 
@@ -352,7 +354,8 @@ class CharacteristicViewController: UIViewController {
             }
         }
 
-        let _ = stringEncodingButton.setMenu(items: StringEncoding.all, initialSelection: StringEncoding(rawValue: .utf8)!.index!) { _ in changeHandler() }
+        BluetoothNavigatorTheme.setDropDownColors(of: stringEncodingButton)
+        stringEncodingButton.setMenu(title: "Encoding", items: StringEncoding.all, initialSelection: StringEncoding(rawValue: .utf8)!.index!) { _ in changeHandler() }
 
         valueTypeButtonGroup = RadioButtonGroup(buttons: stringButton, numberButton, initialSelection: stringButton) { _ in changeHandler() }
 

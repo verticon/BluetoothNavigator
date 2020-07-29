@@ -192,11 +192,12 @@ extension AdvertiserListViewController { // UITableViewDataSource
         else {
             var button: DropDownListButton! = cell.accessoryView as? DropDownListButton
             if button == nil {
-                button = DropDownListButton(listBackgroundColor: .gray, itemBackgroundColor: .bluetoothBlue, itemTextColor: .white)
+                button = DropDownListButton()
+                BluetoothNavigatorTheme.setDropDownColors(of: button)
                 button.color = UIColor.bluetoothBlue
                 cell.accessoryView = button
             }
-            _ = button.setList(items: peripheral.advertisement.list ?? ["<no advertisements>"])!
+            button.setList(title: "Advertising Data", items: peripheral.advertisement.list ?? ["<no advertisements>"])
         }
 
         return cell

@@ -89,4 +89,16 @@ class BluetoothNavigatorTheme {
         switches()
         buttons()
     }
+
+    static func setDropDownColors(of: DropDownButton) {
+        of.listBackgroundColor = .gray
+        of.itemBackgroundColor = .bluetoothBlue
+        of.itemTextColor = .white
+    }
+
+    static func setDropDownColors(of: DropDownBarButton) {
+        of.listBackgroundColor = .gray
+        of.itemBackgroundColor = .bluetoothBlue
+        of.itemTextColor = .white
+    }
 }
